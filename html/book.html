@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Tour - Unicorn Travels</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for your intrest in Unicorn Travels! We have received your request and will reach out to you soon for confirming the booking.");
+    }
+  </script>
+</head>
+<body class="book">
+  <header>
+    <h1>Book a Tour</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="booking-form">
+    <form onsubmit="submitForm(event)">
+      <label for="package">Select Package:</label>
+      <select id="package" name="package" required>
+        <option value="">--Select--</option>
+        <option value="Golden Triangle Delight">Golden Triangle Delight</option>
+        <option value="Coastal Escape">Coastal Escape</option>
+        <option value="Backwaters & Royalty">Backwaters & Royalty</option>
+        <option value="Himalayan Adventure">Himalayan Adventure</option>
+        <option value="Spiritual South & North">Spiritual South & North</option>
+      </select>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Mobile Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="dates">Preferred Travel Dates:</label>
+      <input type="text" id="dates" name="dates" placeholder="e.g. 10th May - 15th May" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

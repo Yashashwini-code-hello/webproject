@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+  
+  /* Page-specific backgrounds */
+  body.index {
+    background-image: url('luca-bravo-O453M2Liufs-unsplash.jpg');
+  }
+  
+  body.about {
+    background-image: url('360_F_1028646113_k3EhoLLjPIwY4gBIuhOv6pYhlBchEijX.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+      
+      
+  
+  body.destinations {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  
+  body.packages {
+    background-image: url('package1.jpg');
+  }
+  
+  body.book {
+    background-image: url('d1.jpg');
+  }
+  
+  /* Destination cards */
+  .destinations-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .place {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .place img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Package cards */
+  .package-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .package {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 10px;
+  }
+  
+  /* Booking form */
+  .booking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1em;
+  }
+  
+  input, select, button {
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffb700;
+  }
+  /* Welcome Section for Home Page */
+.welcome-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .welcome-box {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 12px;
+    max-width: 600px;
+  }
+  
+  .welcome-box h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #ffd700;
+  }
+  
+  .welcome-box p {
+    font-size: 1.2em;
+    color: #fff;
+  }
+  .about-content {
+    padding: 2em;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    border-radius: 12px;
+  }
+  
+  .about-logo-side img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-text {
+    flex: 1;
+  }
